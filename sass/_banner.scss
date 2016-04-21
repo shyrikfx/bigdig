@@ -1,0 +1,52 @@
+@import "_constants";
+@import "_fonts";
+
+
+.banner {
+	position: relative;
+	margin: 0 auto;
+	background-color: #292929;
+	background: url(../img/bg-banner.png) repeat;
+	&-title {
+		p {
+			font-family: "PTSerifCaption";
+			font-size: 36px;
+	    	color: $hover_color;
+			padding: 28px 0 20px 0px; 
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+	    	span {
+	    		color: #fff;
+	    	}
+		}
+	}
+	&-pictures {
+		position: relative;
+		overflow: hidden;
+		.banner-img {
+			position: relative;
+			margin-left: 2px;
+			overflow:hidden;
+			float: left;
+			width: 33%;
+			p {
+				position: absolute;
+				right: 14px;
+				bottom: 26px;
+				padding-left: 200px;
+				font-family: "PTSerifRegular";
+				font-size: 21px;
+				color: #fff;
+				text-transform: capitalize;
+				text-align: right;
+			}
+		}
+		.banner-img img {
+			@include transition (all 1s ease-out);
+		}
+		.banner-img img:hover {
+			@include transform (scale(1.1)); 
+		}
+	}
+}

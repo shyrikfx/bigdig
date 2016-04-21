@@ -1,0 +1,95 @@
+@import "_constants";
+@import "_fonts";
+
+
+.banner-footer {
+	position: relative;
+	bottom: 20px;
+	padding: 30px 20px 15px 20px;
+	border-top: 20px solid $color;
+	margin: 0 auto;
+	background-color: $color;
+	background: url(../img/bg-banner-footer.png) repeat;
+	overflow: hidden;
+	.banner-footer-client, 
+	.banner-footer-supplier {
+		position: relative;
+		margin: 0;
+	}	
+	.banner-footer-client {
+		padding-left: 83px;
+		float: left;
+		.banner-footer-left {
+			position: absolute;
+			right: 100px;
+			bottom: 83px;
+			padding-top: 30px;
+			width: 492px;
+			height: 185px;
+			background: url(../img/banner-footer-left-client.png);
+			@include opacity (0.9);
+		}
+	}
+	.banner-footer-supplier {
+		padding-right: 87px;
+		float: right;
+		.banner-footer-right {
+			position: absolute;
+			left: 90px;
+			bottom: 83px;
+			padding-top: 30px;
+			width: 492px;
+			height: 185px;
+			background: url(../img/banner-footer-right-supplier.png);
+			@include opacity (0.9); 
+		}
+	}
+	.banner-footer-title {
+		margin: 0;
+		padding: 0 0 17px 22px;
+		font-family: "PTSerifCaption";
+		font-size: 24px;
+		color: $color;
+		text-transform: uppercase;
+		text-align: center;
+		span {
+			color: #5b5e5e;
+		}
+	}
+	.banner-footer-content {
+		margin: 0;
+		padding: 0 71px 0 93px;
+		font-family: "HelveticaneuecyrLight";
+		font-size: 18px;
+		color: $color;
+		text-align: center;	
+		line-height: 21px;	
+	}
+	.banner-footer-button {
+		display: inline-block;
+		margin: 27px 19px 0 129px ;
+		padding: 11px 0px 10px; 
+		border: 1px solid #fff;
+		width: 250px;
+		@include border-radius (4px);
+		font-family: "HelveticaneuecyrRoman";
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fff; 
+		background-color: #faa81a; 
+		@include background-image (#faa61a, #f37021); 
+		text-decoration: none;
+		text-align: center;	
+		@include transform (scale(1, 1));
+		@include transition (550ms); 
+		@include transition (ease-out);
+	}
+	.banner-footer-button:hover {
+		@include transform (scale(1.11,1.17));
+		@include transition (ease-out); 
+		@include transition (550ms); 
+	}
+	.banner-footer-button:active {
+		@include background-image (#f37021, #faa61a);    
+	}	
+}

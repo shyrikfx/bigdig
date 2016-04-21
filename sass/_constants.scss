@@ -1,0 +1,87 @@
+				// COLOR
+$color: #231f20;
+$link_color: #5b5f5e;
+$hover_color: #f58220;
+
+
+				// FONTS
+
+				// BACKGROUND-IMAGE 
+				
+@mixin background-image($first_color,$second_color) {
+		background-image: -webkit-linear-gradient(top, $first_color 0%, $second_color 100%);
+		background-image: -moz-linear-gradient(top, $first_color 0%, $second_color 100%); 
+		background-image: -o-linear-gradient(top, $first_color 0%, $second_color 100%); 
+		background-image: -ms-linear-gradient(top, $first_color 0% ,$second_color 100%); 
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=0 ); 
+		background-image: linear-gradient(top, $first_color 0% , $second_color 100%);  
+}
+
+
+				// BORDER_RADIUS
+				
+@mixin border-radius($radius) {
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		border-radius: $radius;
+}
+
+
+
+				// BOX-SHADOW
+
+@mixin box-shadow ($box-shadow_param) {
+	    -webkit-box-shadow: $box-shadow_param;
+	    -moz-box-shadow: $box-shadow_param;
+	    box-shadow: $box-shadow_param;
+}
+
+
+				// TRANSITION
+				   
+@mixin transition($trans_param) {
+		-webkit-transition: $trans_param;
+		-moz-transition: $trans_param;
+		-o-transition: $trans_param;
+		transition: $trans_param;	
+}
+
+
+
+				// TRANSITION_DURATION
+// @mixin transition-duration($t_d_param) {
+// 	-webkit-transition-duration: $t_d_param;
+// 	-moz-transition-duration: $t_d_param;
+// 	-o-transition-duration: $t_d_param;
+// }
+
+
+
+				// TRANSITION_TIMING_FUNCTION
+				
+// @mixin transition-timing-function ($t_t_f_param) {
+// 	-webkit-transition-timing-function: $t_t_f_param;
+// 	-moz-transition-timing-function: $t_t_f_param;
+// 	-o-transition-timing-function: $t_t_f_param;
+// }
+
+
+
+				// TRANSFORM
+
+@mixin transform($transform_param) {
+		-webkit-transform: $transform_param;
+		-moz-transform: $transform_param;
+		-o-transform: $transform_param;
+		-ms-transform: $transform_param;
+}
+
+
+
+				// OPACITY
+				
+@mixin opacity($opacity_param) {
+		-moz-opacity: $opacity_param;
+		opacity: $opacity_param;
+}
+

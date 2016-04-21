@@ -1,0 +1,13 @@
+html, body {
+	min-width: 1240px;
+}
+.big-wrapper {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 1200px;
+}
+.less-wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+}

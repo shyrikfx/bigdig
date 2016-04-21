@@ -1,0 +1,181 @@
+@import "_constants";
+@import "_fonts";
+
+
+.contact {
+	position: relative;
+	margin: 70px auto 0;
+	padding: 58px 0px 83px;
+	background-color: $color;
+	background: url(../img/bg-banner.png) repeat;
+	overflow: hidden;
+	.contact-title {
+		margin: 0;
+		padding: 0 155px 15px;
+		font-family: "PTSerifCaption";
+		font-size: 30px;
+		color: #adaeae;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.contact-annotation {
+		margin-top: 13px;
+		padding: 0 175px 20px;
+		font-family: "HelveticaneuecyrLight";
+		font-size: 18px;
+		line-height: 26px;
+		color: #fff;
+		text-align: center;
+	}
+	.contact-left {
+		width: 49%;
+		float: left;
+		.address {
+			margin: 0px 0px 24px;
+			padding: 0px 0px;
+			font-family: "HelveticaneuecyrLight";
+			font-size: 18px;
+			line-height: 24px;
+			color: #fff;
+			text-transform: capitalize;
+			text-align: left;
+			p {
+				font-family: "PTSerifRegular";
+				text-transform: none;
+				color: #adaeae;
+			}
+		}
+		.contact-info {	
+			margin-bottom: 30px;
+			p {
+				margin-bottom: 22px;
+				font-family: "PTSerifRegular";
+				font-size: 18px;
+				line-height: 24px;
+				color: #adaeae;
+				text-align: left;
+			}
+			span,
+			a {
+				font-family: "HelveticaneuecyrLight";
+				text-transform: none;
+				color: #fff;
+			}
+			a:hover {
+				color: $hover_color;
+			}
+		}
+		.contact-map {
+			width: 600px;
+			height: 170px;
+		}
+	}
+	.contact-right {
+		margin: 5px 30px 0px 0px;		
+		float: right;
+		p {
+			display: block;
+		}
+		#about-project {
+			display: inline-block;
+			margin: 0 0 11px 0;
+			padding: 16px 0 16px 15px;
+			width: 470px;
+			height: 255px;
+			max-width: 470px;
+			max-height: 255px;
+			font-family: "PTSerifRegular";
+			font-size: 16px;
+			line-height: 24px;
+			color: #adaeae;
+		}
+		#email {
+			padding: 12px 0 12px 15px;
+			box-sizing: padding-box;
+			margin: 0 0 12px 0;
+			width: 470px;
+			font-family: "PTSerifRegular";
+			font-size: 16px;
+			line-height: 24px;
+			color: #adaeae;
+		}
+		#name {
+			padding: 12px 0 12px 15px;
+			box-sizing: padding-box;
+			width: 470px;
+			margin: 0 0 12px 0;	
+			font-family: "PTSerifRegular";
+			font-size: 16px;
+			line-height: 24px;
+			color: #adaeae;	
+		}
+		#about-project:focus,
+		#email:focus,
+		#name:focus {
+			color: $color;
+	        @include box-shadow (0px 0px 5px #fff);
+		}
+		#submit {
+			display: inline-block;
+			margin: 24px 20px 0 0px ;
+			padding: 14px 30px; 
+			border: 1px solid #fff; 
+			@include border-radius (4px); 
+			font-family: "HelveticaneuecyrLight";
+			font-size: 18px;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-image: none; 
+            background-color: transparent;
+			color: #fff;
+			&:hover {
+				@include background-image (#faa61a, #f37021); 
+			}
+		}
+		:last-child {
+			display: inline-block;
+			font-family: "HelveticaneuecyrLight";
+			font-size: 16px;
+			color: #adaeae;
+		}
+	}
+}
+.contact-bottom {
+	padding: 103px 0 131px;
+	background: url('../img/bg-contact1.png') no-repeat #000;
+	p {
+		margin: 0 0 53px;
+		padding: 0 20px 0 10px;
+		font-family: "PTSerifRegular";
+		font-size: 30px;
+		line-height: 42px;	
+		color: #fff;
+		text-align: center;
+	}
+	a.button {
+		display: block;
+		margin: 0 auto;
+		padding: 11px 0px 10px; 
+		width: 250px;
+		@include border-radius (4px);
+		font-family: "HelveticaneuecyrRoman";
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fff; 
+		background-color: #faa81a; 
+		@include background-image (#faa61a, #f37021); 
+		text-decoration: none;
+		text-align: center;	
+		@include transform (scale(1, 1));
+		@include transition (550ms); 
+		@include transition (ease-out);
+	}
+	a.button:hover {
+		@include transform (scale(1.11,1.17));
+		@include transition (ease-out); 
+		@include transition (550ms); 
+		}
+	a.button:active {
+		@include background-image (#f37021, #faa61a);     
+		}	
+}
